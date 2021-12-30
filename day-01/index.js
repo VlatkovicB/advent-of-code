@@ -1,4 +1,4 @@
-import { data } from "../utils.js";
+import { dayOne } from "./utils.js";
 
 const calculateCount = (data = []) => data.reduce((prev, curr) => {
   if (prev.prev < curr) {
@@ -27,4 +27,4 @@ const slidingWindow = (data = [], window = 3) => {
   return result.map(group => group.reduce((prev, curr) => Number(prev) + Number(curr), 0))
 }
 
-console.log(calculateCount(slidingWindow(data)))
+console.log(calculateCount(slidingWindow(dayOne)))
