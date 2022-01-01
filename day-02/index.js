@@ -1,4 +1,4 @@
-import { partTwo } from "./utils.js";
+import { dayTwo } from "./utils.js";
 
 const calculateDistance = (data = []) => {
   const { forward, down, up } = data.reduce((prev, curr) => {
@@ -16,4 +16,4 @@ const calculateDistance = (data = []) => {
 }
 
 
-console.log(calculateDistance(partTwo))
+console.log(calculateDistance(dayTwo))
